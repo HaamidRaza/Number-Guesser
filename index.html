@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="target.jpg">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">    
+    <h1>🎯Guessing Game</h1>
+    
+    <div id="setup">
+      <p>Enter the maximum number to guess:</p>
+      <input type="number" id="maxInput" placeholder="e.g. 100" />
+      <button onclick="startGame()">Start Game</button>
+    </div>
+    
+    <div id="game" style="display:none;">
+    <p id="rangeText"></p>
+    <input type="number" id="guessInput" placeholder="Enter Your Guess">
+    <button onclick="checkGuess()">Check</button>
+    <p id="message"></p>
+    <button onclick="resetGame()" id="resetBtn">Play Again</button>
+    </div>
+    </div>
+<script src="javascript.js"></script>
+</body>
+</html>
